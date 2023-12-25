@@ -1,0 +1,19 @@
+import pyautogui
+import time
+import random
+
+# Function to simulate human-like typing speed
+def type_with_random_speed(text):
+    for char in text:
+        pyautogui.write(char)
+        time.sleep(random.uniform(0.05, 0.5))  # Random delay between keystrokes
+
+
+# simulate click in text box with best possible method.
+
+if __name__ == "__main__":
+    open_chromium_with_android_agent()
+    
+    # Type email with random speed
+    email = "luczietoshi@email.com"
+    type_with_random_speed(email)
